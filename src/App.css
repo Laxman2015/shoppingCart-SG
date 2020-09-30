@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.text-success{
+  color: green;
+  font-size: 24px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+.btn-outline-primary:hover{border-color:#33b1b7; margin: 10px; padding: 5px; width: 150px;}
+.btn-outline-primary{color:#fff;background-color:#007bff;border-color:#007bff; margin: 10px;padding: 5px;width: 150px;}
+.btn-primary:hover{border-color:#33b1b7; margin: 10px;padding: 5px;width: 150px;}
+.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff; margin: 10px;padding: 5px;width: 150px;}
+.btn-outlineprimary{color:#007bff;background-color:#fff; border-color:#007bff; margin: 10px;padding: 5px;width: 150px;}
