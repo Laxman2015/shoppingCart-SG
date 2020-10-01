@@ -14,7 +14,7 @@ class Login extends React.Component {
   }
 
   handleSubmit = (event) => {
-    this.props.history.push("/");
+    this.props.history.push("/shoppingcart-sg/");
     this.props.actions.handleLogin();
   };
 
