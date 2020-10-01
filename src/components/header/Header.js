@@ -11,7 +11,7 @@ const Header = (props) => {
     <header className={styles.header}>
       <span className={styles.headerLeft}>Shopping Cart</span>
       <span className={styles.headerRight}>
-        <Link to="/shoppingcart-sg/">App Store</Link>
+        <Link to="/shoppingcart-sg/">Home/App Store</Link>
         {isUserLoggedIn ? (
           <span>
             <Link to="/shoppingcart-sg/cart">

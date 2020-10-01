@@ -40,7 +40,7 @@ class Login extends React.Component {
             </label>
             <input
               type="password"
-              placeholder="admin"
+              placeholder="1234"
               name="password"
               required
             />
