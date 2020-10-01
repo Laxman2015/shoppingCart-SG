@@ -6,9 +6,9 @@ import Login from "./components/Login";
 
 const appRoute = () => (
   <Switch>
-    <Route exact path="/" component={App} />
-    <Route exact path="/cart" component={CartModule} />
-    <Route exact path="/login" component={Login} />
+    <Route exact path="/shoppingcart-sg/" component={App} />
+    <Route exact path="/shoppingcart-sg/cart" component={CartModule} />
+    <Route exact path="/shoppingcart-sg/login" component={Login} />
   </Switch>
 );
 
