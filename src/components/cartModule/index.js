@@ -53,7 +53,7 @@ class Cart extends React.Component {
               {checkout && (
                 <div className="p-3 text-center text-success">
                   <p>Checkout successfull</p>
-                  <Link to="/" className="btn btn-outline-success btn-sm">
+                  <Link to="/shoppingcart-sg/" className="btn btn-outline-success btn-sm">
                     <span onClick={clearCart}>BUY MORE </span>
                   </Link>
                 </div>

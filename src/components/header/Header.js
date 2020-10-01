@@ -11,19 +11,19 @@ const Header = (props) => {
     <header className={styles.header}>
       <span className={styles.headerLeft}>Shopping Cart</span>
       <span className={styles.headerRight}>
-        <Link to="/">App Store</Link>
+        <Link to="/shoppingcart-sg/">App Store</Link>
         {isUserLoggedIn ? (
           <span>
-            <Link to="/cart">
+            <Link to="/shoppingcart-sg/cart">
               <CartIcon /> Cart ({itemCount}){" "}
             </Link>
-            <Link to="/">
+            <Link to="/shoppingcart-sg/">
               <Logout />
               <span onClick={() => dispatch(logout())}>Logout</span>{" "}
             </Link>
           </span>
         ) : (
-          <Link to="/login">Sign in</Link>
+          <Link to="/shoppingcart-sg/login">Sign in</Link>
         )}
       </span>
     </header>
