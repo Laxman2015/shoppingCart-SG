@@ -8,7 +8,10 @@ Go to the project directory, and run below commond:
 
 ` npm  run start`
 
- # I have used GitHUB json-server for mocking the Data, which one i have allredy deployed on GitHub repo
+ I have used GitHUB json-server for mocking the Data, which one i have allredy deployed on GitHub repo
+ 
+ Live Running App
+ URL: 'https://laxman2015.github.io/shoppingcart-sg/'
 
  Locally Running the App
 
