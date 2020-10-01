@@ -13,15 +13,14 @@ const App = () => {
   const [searchString, setSearchString] = useState("");
   const [filteredItems, setFilteredItems] = useState([]);
 
-  const { cartItems, isUserLoggedIn } = useSelector((state) => ({
-    cartItems: state.CartReducer.cartItems,
-    isUserLoggedIn: state.CartReducer.isUserLoggedIn,
-  }));
-
-  useEffect(() => {
-    axios.get(productLists).then((res) => {
+  const getProductList = async (url) => {
+    await axios.get(url).then((res) => {
       setProducts(res.data);
     });
+  };
+
+  useEffect(() => {
+    getProductList(productLists);
   }, []);
 
   const onSearchItem = (evt) => {
@@ -38,6 +37,11 @@ const App = () => {
       setFilteredItems(filteredItems);
     }
   }, [searchString, products]);
+
+  const { cartItems, isUserLoggedIn } = useSelector((state) => ({
+    cartItems: state.CartReducer.cartItems,
+    isUserLoggedIn: state.CartReducer.isUserLoggedIn,
+  }));
 
   return (
     <div className="App">
